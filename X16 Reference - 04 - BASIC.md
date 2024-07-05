@@ -211,12 +211,12 @@ There are several new statement and functions. Note that all BASIC keywords (suc
 
 ### ASC
 
-**TYPE: Integer Function**  
-**FORMAT: ASC(&lt;string&gt;)**
+| | |
+| Type | Integer Function |
+| Format | ASC(&lt;string&gt;) |
+| Action | Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0. |
 
-**Action:** Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0.
-
-**EXAMPLE of ASC Function:**
+#### Example
 
 ```BASIC
 ?ASC("A")
@@ -225,7 +225,46 @@ There are several new statement and functions. Note that all BASIC keywords (suc
 ?ASC("")
  0
 ```
+---
 
+### ASC
+
+| | |
+| Type | Integer Function |
+| Format | ASC(&lt;string&gt;) |
+
+#### Description
+
+Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0.
+
+#### Example
+
+```BASIC
+?ASC("A")
+ 65
+
+?ASC("")
+ 0
+```
+---
+
+### ASC
+
+| | |
+| Type | Integer Function |
+| Format | ASC(&lt;string&gt;) |
+
+Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0.
+
+#### Example
+
+```BASIC
+?ASC("A")
+ 65
+
+?ASC("")
+ 0
+```
 ---
 
 ### BIN$
