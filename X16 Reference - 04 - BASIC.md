@@ -207,14 +207,17 @@ Refer to [Chapter 13](X16%20Reference%20-%2013%20-%20Working%20with%20CMDR-DOS.m
 
 There are several new statement and functions. Note that all BASIC keywords (such as `FOR`) get converted into tokens (such as `$81`), and the tokens for the new keywords have likely shifted from one ROM version to the next. Therefore, loading BASIC program saved from an old revision of BASIC may mix up keywords. As of ROM version R42, the keyword token positions should no longer shift and programs saved in R42 BASIC should be compatible with future versions.
 
+---
+
 ### ASC
 
-**TYPE: Integer Function**  
-**FORMAT: ASC(&lt;string&gt;)**
+| | |
+| - | - |
+| Type | Integer Function |
+| Format | ASC(&lt;string&gt;) |
+| Action | Returns an integer value representing the <kbd>PETSCII</kbd> code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0. |
 
-**Action:** Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0.
-
-**EXAMPLE of ASC Function:**
+#### Example
 
 ```BASIC
 ?ASC("A")
@@ -223,6 +226,49 @@ There are several new statement and functions. Note that all BASIC keywords (suc
 ?ASC("")
  0
 ```
+---
+
+### ASC
+
+| | |
+| - | - |
+| Type | Integer Function |
+| Format | ASC(&lt;string&gt;) |
+
+#### Description
+
+Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0.
+
+#### Example
+
+```BASIC
+?ASC("A")
+ 65
+
+?ASC("")
+ 0
+```
+---
+
+### ASC
+
+| | |
+| - | - |
+| Type | Integer Function |
+| Format | ASC(&lt;string&gt;) |
+
+Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0.
+
+#### Example
+
+```BASIC
+?ASC("A")
+ 65
+
+?ASC("")
+ 0
+```
+---
 
 ### BIN$
 
@@ -237,6 +283,8 @@ There are several new statement and functions. Note that all BASIC keywords (suc
 PRINT BIN$(200)   : REM PRINTS 11001000 AS BINARY REPRESENTATION OF 200
 PRINT BIN$(45231) : REM PRINTS 1011000010101111 TO REPRESENT 16 BITS
 ```
+
+---
 
 ### BANK
 
@@ -259,6 +307,8 @@ Note: BANK uses its own register to store the the command's desired bank numbers
 
 Note: Memory address `$00`, which is the hardware RAM bank register, will usually report the bank set by the `BANK` command. The one exception is after a `BLOAD` or `BVERIFY` inside of a running BASIC program.  `BLOAD` and `BVERIFY` change the RAM bank (as if you called `BANK`) to the bank that `BLOAD` or `BVERIFY` stopped at.
 
+---
+
 ### BINPUT&#35;
 
 **TYPE: Command**  
@@ -275,6 +325,8 @@ Note: Memory address `$00`, which is the hardware RAM bank register, will usuall
 40 IF ST<>0 THEN 20
 50 CLOSE 8
 ```
+
+---
 
 ### BOOT
 
