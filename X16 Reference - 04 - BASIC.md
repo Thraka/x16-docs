@@ -212,9 +212,10 @@ There are several new statement and functions. Note that all BASIC keywords (suc
 ### ASC
 
 | | |
+| - | - |
 | Type | Integer Function |
 | Format | ASC(&lt;string&gt;) |
-| Action | Returns an integer value representing the PETSCII code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0. |
+| Action | Returns an integer value representing the <kbd>PETSCII</kbd> code for the first character of `string`. If `string` is the empty string, `ASC()` returns 0. |
 
 #### Example
 
@@ -230,6 +231,7 @@ There are several new statement and functions. Note that all BASIC keywords (suc
 ### ASC
 
 | | |
+| - | - |
 | Type | Integer Function |
 | Format | ASC(&lt;string&gt;) |
 
@@ -251,6 +253,7 @@ Returns an integer value representing the PETSCII code for the first character o
 ### ASC
 
 | | |
+| - | - |
 | Type | Integer Function |
 | Format | ASC(&lt;string&gt;) |
 
